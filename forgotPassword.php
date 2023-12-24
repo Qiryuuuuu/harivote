@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="back-wrapper">
-        <a class="back" href="#">Back</a>
+        <a class="back" href="loginadmin.php">Back</a>
     </div>    
 
     <div class="logo-wrapper"> 
@@ -21,7 +21,7 @@
             <h1>Forgot Password<h1>
             <div class="group-input">
 				<div class="textfield">
-        			<input type="text" class="form-control" name="username" placeholder="Enter email" required>
+        			<input type="email" class="form-control" name="email" placeholder="Enter email" required>
 				</div>
 
                 <div>

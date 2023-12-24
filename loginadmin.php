@@ -37,7 +37,7 @@
 				</div>
 				
 				<div class= "pass-wrapper">
-					<a href="#" class="forgot-password">Forgot Password?</a>
+					<a href="forgotPassword.php" class="forgot-password">Forgot Password?</a>
 				</div>
 
 				<div>
