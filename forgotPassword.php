@@ -17,7 +17,7 @@
 
 <section class="container">
     <div class="content">
-        <form action="#" method="post">
+        <form action="send-password-reset.php" method="post">
             <h1>Forgot Password<h1>
             <div class="group-input">
 				<div class="textfield">

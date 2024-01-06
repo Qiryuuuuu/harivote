@@ -1,3 +1,34 @@
+<?php
+
+$token = $_GET["token"];
+
+$token_hash = hash("sha256", $token);
+
+$mysqli = require __DIR__ . "/database.php";
+
+$sql = "SELECT * FROM admin
+        WHERE reset_token_hash = ?";
+
+$stmt = $mysqli->prepare($sql);
+
+$stmt->bind_param("s", $token_hash);
+
+$stmt->execute();
+
+$result = $stmt->get_result();
+
+$admin = $result->fetch_assoc();
+
+if ($admin === null) {
+    die("token not found");
+}
+
+if (strtotime($admin["reset_token_expires_at"]) <= time()) {
+    die("token has expired");
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +48,9 @@
 
 <section class="container">
     <div class="content">
-        <form action="#" method="post">
+        <form action="process-reset-password.php" method="post">
+        <input type="hidden" name="token" value="<?= htmlspecialchars($token) ?>">
+
             <h1>Reset Password<h1>
             <div class="group-input">
                 <div class="textfield">
