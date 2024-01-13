@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin sign up</title>
-    <link rel="stylesheet" href="adminSignup.css">
+    <link rel="stylesheet" href="adminSignups.css">
 
 </head>
 <body>
@@ -19,11 +19,17 @@
     <section class="container">
             <div class="content">
                 <div class="left"></div>
-                <form action="loginadmin.php" method="post">
+                <form action="process-signupadmin.php" method="post">
                     <h1>Create Account</h1>
                     <div class="group-input">
+                        <div class="textfield names">
+                            <input type="text" class="name input-field first-name" placeholder="First Name" name="firstname" required>
+
+                            <input type="text" class="name input-field last-name" placeholder="Last Name" name="lastname" required>
+                        </div>
+                        
                         <div class="textfield">
-                            <input type="text" class="name input-field" placeholder="Full Name" name="name" required>
+                            <input type="text" class="name input-field" placeholder="Username" name="username" required>
                         </div>
 
                         <div class="textfield">
@@ -45,7 +51,7 @@
                         </div>     
 
                         <div class="textfield">
-                            <input type="password" id="confirm-password" class="input-field" placeholder="Confirm Password" required>
+                            <input type="password" id="confirm-password" class="input-field" name="confirmPassword" placeholder="Confirm Password" required>
                         </div>
 
                         <p id="confirm-validation">Password don't match</p>
@@ -54,7 +60,7 @@
                         <?php } ?>
 
                         <div>
-                            <button class= "create" type="submit" name="login">Submit</button>
+                            <button class= "create" type="submit" name="submit">Submit</button>
                             <p class="priv">By submitting this form you agree to our <span class="log"><a href="#" target="_blank">Privacy and Policy</a></span></p>
                             <p>Already have an account? <span class="log"><a href="loginadmin.php">Sign in</a></span></p>
                         </div>
