@@ -149,6 +149,3 @@ if ($stmt->execute()) {
         die($conn->error . " " . $conn->errno);
     }
 }
-
-
-
