@@ -42,7 +42,7 @@ $stmt -> bind_param ("ss", $password_hash, $admin["id"]);
 $stmt -> execute();
 
 if ($stmt->affected_rows > 0) {
-    echo "Password Updated. You can now login.";
+    header('Location: resetPasswordSuccess.php');
 } else {
     echo "Failed to update password.";
 }

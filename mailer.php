@@ -32,11 +32,12 @@ try {
     $mail->Body = <<<END
 
     Click <a href="http://localhost/votesystem/resetPassword.php?token=$token">here</a> to reset your password.
+    <a href="http://localhost/votesystem/resetPasswordSuccess.php?token=$token">
 
     END;
 
     $mail->send();
-    echo 'Message has been sent';
+    header('Location: sentPassword.php');
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
