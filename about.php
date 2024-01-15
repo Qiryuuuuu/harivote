@@ -74,7 +74,7 @@ img {
 }
  h1 {
             font-family: tahoma, verdana, arial, sans-serif;
-            font-size: 40px;
+            font-size: 60px;
             list-style: none;
             letter-spacing: 0.05px;
             margin: 0;
@@ -105,7 +105,17 @@ h3 {
     margin-bottom: 1%;
     color: #000;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.20em;
+    font-size: 0.95em;
+    font-weight: 400;
+    align-items: center;
+    text-align: justify;
+}
+.philo1 {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.10em;
     font-weight: 400;
     align-items: center;
     text-align: justify;
@@ -312,7 +322,7 @@ body {
     <header id="header">
       <nav class="navbar">
         <div id="logo">
-          <a href="home.php"> <img height="80px" width="220px" src="img/logofinal.png"></a>
+          <a href="home.php"> <img height="80px" width="180px" src="img/logofinal.png"></a>
          
 
             </div>
@@ -355,7 +365,7 @@ body {
     <section id="vision">
       <div class="div-vision">
         <h2>Our Vision</h2>
-        <p class="philo">
+        <p class="philo1">
           We envision a future where voting is accessible and convenient for everyone, and where organizations can trust
           the integrity and accuracy of their election results. Harivote’s strives to create a democratic environment
           where transparency and fairness are at the forefront of every election. We aim to become the leading provider
@@ -368,7 +378,7 @@ body {
       </div>
       <div class="div-vision">
         <h2>Our Mission</h2>
-        <p class="philo">
+        <p class="philo1">
           Harivote’s mission is to provide a secure, user-friendly, and efficient electronic voting system for the
           organizations of the Pamantasan ng Lungsod ng Maynila. We aim to revolutionize the way voting is conducted by
           offering a reliable and robust platform that ensures the accuracy and integrity of the election results. Our
@@ -381,7 +391,7 @@ body {
     <section id="vision">
       <div class="div-vision">
         <h2>Who We Are</h2>
-        <p class="philo">
+        <p class="philo1">
           Welcome to our student-led online voting website, HariVote! We are a group of passionate and dedicated
           students
           who have come together to create a platform that empowers fellow PLMayers to voice their opinions and make a
@@ -463,7 +473,7 @@ body {
 
     <footer>
       <div>
-        <h3>© 2023 HariVote. All rights reserved.</h3>
+        <h3>© 2024 HariVote. All rights reserved.</h3>
       </div>
 
     </footer>
