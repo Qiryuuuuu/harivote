@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <div class="row">
             <div class="colm-logo">
                 <h1 class="logoone">Hari</h1><h1 class="logotwo">Vote</h1>
-                <h2>Choose the best Haribons on HariVote</h2>
+                <h2>Connect Voices, Empower Haribons</h2>
             </div>
    
     
@@ -60,7 +60,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 	    	<a href="user-forgotPassword.php" class="forgot-password">Forgot Password?</a>
 		</div>
         
-        <button type = "submit" class = "btn-new">Login</button>
+        <a type = "submit" class = "btn-new" role="button">Login</a>
 
         <a href="loginadmin.php">Login as Admin</a>
                     <a class ="btn-new" href="signup.php" role="button">Create new Account</a>
