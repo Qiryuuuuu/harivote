@@ -112,7 +112,7 @@ try {
     $mail->isHTML(true);
 
     
-    $regmessage= "Greetings, ". $firstname . "! The code below is your assigned Voter's ID. Please utilize on vote tab when about to vote.\n\n\n" . $voter;
+    $regmessage= "Greetings, ". $firstname . "! <p>The code below is your assigned Voter's ID. Please utilize on vote tab when about to vote.</p>" . $voter;
 
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
