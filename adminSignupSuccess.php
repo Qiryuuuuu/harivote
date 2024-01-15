@@ -8,6 +8,12 @@
 
 </head>
 <body>
+
+        <div id="success-popup" class="popup">
+             <h1 class="messpop">Account created successfully!</h1>
+             <a class="loginAdmin" href="loginadmin.php">Login now</a>
+        </div>
+
     <div class="back-wrapper">
         <a class="back" href="home.php">Back</a>
     </div>
@@ -68,6 +74,7 @@
                 </form>
             </div>
         </section>
+
 
         <script src="js/adminSignup.js"></script>
         
