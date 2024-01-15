@@ -71,8 +71,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     </main>
     <footer id="footer">
         <div id="footer-inner">
-            <p>&copy; Copyright <a href="#">HariVote</a> &#124; <a href="#">Terms of Use</a> &#124; 
-            <a href="#">Privacy Policy</a></p>
+            <p>&copy; Copyright <a href="https://www.facebook.com/profile.php?id=100092946333803">HariVote</a> &#124; <a href="https://plmedu-my.sharepoint.com/:b:/g/personal/jnialambra2021_plm_edu_ph/EWFykrsgO9lEm8mMFPi-7_IBZKZcATHNNvvtGYlqA_McbQ?e=Eieqda">Terms of Use</a> &#124; 
+            <a href="https://plmedu-my.sharepoint.com/:b:/g/personal/jnialambra2021_plm_edu_ph/EU5rNZ-k50NHiqrwDhm_3PMBZWN29BFMkylBvJwwBerUgw?e=36ur1c">Privacy Policy</a></p>
             <div class="clr"></div>
         </div>
     </footer>
