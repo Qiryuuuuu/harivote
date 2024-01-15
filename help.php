@@ -265,6 +265,15 @@ textarea {
   margin-bottom: 20px;
 }
 
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #1100ff59;
+  margin-bottom: 20px;
+}
+
 input[type="submit"] {
   background-color: #000155;
   color: #fff;

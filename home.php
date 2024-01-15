@@ -478,7 +478,7 @@ form {
     <br><br><br>
 
     <div class="box">
-      <h1 class="heading">CONNECTING YOU TO DEMOCRACY LIKE NEVER BEFORE</h1>
+      <h1 class="heading">CONNECT VOICES, EMPOWER HARIBONS</h1>
     </div>
 
     <section id="about">
