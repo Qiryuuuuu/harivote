@@ -4,8 +4,7 @@
 <?php include 'includes/header.php'; 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
-use PHPMailer\PHPMailer\Exception;
-
+use PHPMailer\PHPMailer\Exception; 
 ?>
 <body class="hold-transition skin-blue layout-top-nav">
 <div class="wrapper">
@@ -70,7 +69,7 @@ use PHPMailer\PHPMailer\Exception;
 					    		<h3>You have already voted for this election.</h3>
 					    		<a href="#view" data-toggle="modal" class="btn btn-flat btn-primary btn-lg">View Ballot</a>
 								<a href="https://www.facebook.com/profile.php?id=100092946333803" data-toggle="modal" class="btn btn-flat btn-primary btn-lg">View Results</a>
-								<a href="home.php" data-toggle="modal" class="btn btn-flat btn-primary btn-lg">Go Home</a>
+								<a href="home.php" class="btn btn-flat btn-primary btn-lg">Go Home</a>
 					    	</div>
 				    		<?php
 				    	}
@@ -144,64 +143,9 @@ use PHPMailer\PHPMailer\Exception;
 										$candidate = '';
 
 									}	
-									
+
 				        		?>
-
-								<?php
-								
-								
-								
-
-								?>
-								
-									<html>
-									<body>
-									<form action="votehome.php" method="POST">
-									Registered Email: <input type="email" name="registeredemail"/>    
-									</form>
-
-								<?php
-
-					if(isset($_POST['vote'])){
-					$registeredemail=$_POST['registeredemail'];
-					}				
-
-				require 'PHPMailer/src/Exception.php';
-				require 'PHPMailer/src/PHPMailer.php';
-				require 'PHPMailer/src/SMTP.php';
-
-				//Create an instance; passing `true` enables exceptions
-				$mail = new PHPMailer(true);
-				
-				try {
-					//Server settings                 
-					$mail->isSMTP();                                            //Send using SMTP
-					$mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
-					$mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-					$mail->Username   = 'plm.harivote@gmail.com';                     //SMTP username
-					$mail->Password   = 'pbzngrvmvpreadnv';                               //SMTP password
-					$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
-					$mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
-				
-					//Recipients
-					$mail->setFrom('from@example.com', 'PLM HariVote');
-					$mail->addAddress($_POST["registeredemail"]);   //Add a recipient
-					$mail->isHTML(true);
-				
-					$regmessage= "Hello, Haribon! Please be noted that your vote has been casted successfully.<br>You may check your ballot receipt at the Harivote Website under Elections Page.<br>The link below contains the live-time result of the election.";
-				
-					//Content
-					$mail->isHTML(true);                                  //Set email format to HTML
-					$mail->Subject = 'PLM E-Voting';
-					$mail->Body    = $regmessage;
-					$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
-				
-					$mail->send();
-					echo 'Message has been sent';
-				} catch (Exception $e) {
-				}
-
-								?>
+				        		<div class="text-center">						
 					        		<button type="button" class="btn btn-success btn-flat" id="preview"><i class="fa fa-file-text"></i> Preview</button> 
 					        		<button type="submit" class="btn btn-primary btn-flat" name="vote"><i class="fa fa-check-square-o"></i> Submit</button>
 					        	</div>
