@@ -80,7 +80,7 @@
                     
                     <div class="input-field">
                             <label label for="studno">Student Number</label>
-                            <input  id="studno" placeholder="Ex. 202100123" name="studno"required>
+                            <input type = "number" id="studno" placeholder="Ex. 2021XXXXX" name="studno"required>
                         </div>
                     <div class="input-field">
                       
