@@ -60,7 +60,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 	    	<a href="user-forgotPassword.php" class="forgot-password">Forgot Password?</a>
 		</div>
         
-        <a type = "submit" class = "btn-new" role="button">Login</a>
+        <button type = "submit" class = "btn-new">Login</button>
 
         <a href="loginadmin.php">Login as Admin</a>
                     <a class ="btn-new" href="signup.php" role="button">Create new Account</a>
